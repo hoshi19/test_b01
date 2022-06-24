@@ -6,6 +6,11 @@
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <style type="text/css">
+    body {
+    background-color: #D8D8D8;
+}
+    </style>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
@@ -13,12 +18,12 @@
 <table width="1600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>
-      <td><img src="top_01.jpg" width="800" height="170" alt=""/></td>
+      <td valign="top"><img src="top_01.jpg" width="800" height="170" alt=""/></td>
       <td valign="top"><img src="top_02.jpg" width="800" height="170" alt=""/></td>
     </tr>
     <tr style="text-align: center">
       <td valign="top"><img src="mein_01 .jpg" width="800" height="850" alt=""/></td>
-      <td>    <!-- <model-viewer> HTML element -->
+      <td valign="top">    <!-- <model-viewer> HTML element -->
     <model-viewer bounds="tight" enable-pan src="Suit_Canali_Suit-only_02.glb" ar ar-modes="webxr scene-viewer quick-look" style="width:800px;height:1000px;" camera-controls poster="poster.webp" shadow-intensity="1" exposure="2" shadow-softness="1" environment-image="pillars_1k.hdr" skybox-image="pillars_1k.hdr">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
